@@ -13,17 +13,8 @@
     <header class="main-header">
       <div class="container">
         <nav class="main-navigation">
-          <ul>
-            <li><a href="#">ИНФОРМАЦИЯ</a></li>
-            <li><a href="#">НОВОСТИ</a></li>
-            <li><a href="#">ПРАЙС-ЛИСТ</a></li>
-            <li><a href="#"></a>МАГАЗИН</li>
-            <li><a href="#">КОНТАКТЫ</a></li>
-          </ul>
-        </nav>
-        <div class="user-block">
 
-        </div>
+        </nav>
       </div>
     </header>
 
