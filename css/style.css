@@ -10,6 +10,10 @@ body {
   color: #ffffff;
   background:  #000000 url("../img/body-bg.jpg") no-repeat center top;
 }
+.inner-page {
+  color: #000000;
+  background: #f8f3f0 url("img/pattern-white.jpg") repeat;
+}
 h1 {
    font-size: 30px;
 }
@@ -31,9 +35,6 @@ h1 {
 .main-navigation {
    min-height: 70px;
    width: 780px;
-   float: left;
-}
-.logo {
    float: left;
 }
 .main-navigation ul {
@@ -394,4 +395,37 @@ h1 {
     width: 25px;
     height: 16px;
     background-position: -10px -280px;
+}
+/*shop-shop-shop-shop-shop-shop-shop-shop-shop*/
+.main-navigation .logo-inner {
+  padding-top: 22px;
+   float: left;
+   height: 20px;
+   width: 111px;
+}
+.main-navigation .logo-inner img {
+  height: 24px;
+  width: 111px;
+}
+.main-navigation .logo-inner:hover {
+   background: none;
+}
+.main-navigation .active {
+   position: relative;
+   background-color: none;
+}
+.main-navigation .active:after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   right: 20px;
+   left: 20px;
+   height: 5px;
+   background-color: #ffffff;
+}
+.main-navigation .active a:hover {
+  background: none;
+}
+.inner-page .main-header {
+  margin-bottom: 55px;
 }
