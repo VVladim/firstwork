@@ -306,6 +306,9 @@ h1 {
   font-size: 0;
   vertical-align: top;
   text-decoration: none;
+  transition:
+   background-position 0.5s,
+   background-color 0.5s;
   background: #000000 url("../img/sprite.png") no-repeat center;
 }
 
