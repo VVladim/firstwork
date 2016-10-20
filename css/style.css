@@ -412,8 +412,8 @@ h1 {
 }
 
 
-
-/*shop-shop-shop-shop-shop-shop-shop-shop-shop*/
+/*price-price-price-price-price-price-price-price-price-price-price-price*/
+/*price-price-price-price-price-price-price-price-price-price-price-price*/
 .main-navigation .logo-inner {
   padding-top: 22px;
    float: left;
@@ -594,7 +594,7 @@ h1 {
 /*modal-content-modal-content-modal-content-modal-content-*/
 .modal-content {
   position: absolute;
-  /*display: none;*/
+  display: none;
   top: 120px;
   left: 50%;
   margin-left: -230px;
@@ -757,4 +757,123 @@ h1 {
 .login-checkbox input[type="checkbox"]:checked +
 .checkbox-indicator::after {
   transform: rotate(-45deg);
+}
+/*shop-shop-shop-shop-shop-shop-shop-shop-shop-shop-shop-shop-shop-shop*/
+/*shop-shop-shop-shop-shop-shop-shop-shop-shop-shop-shop-shop-shop-shop*/
+
+
+.inner-page .side-bar {
+  float: left;
+}
+.inner-page .catalog-shop {
+   float: left;
+}
+fieldset {
+   width: 170px;
+   margin-bottom: 0;
+}
+fieldset ul {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+}
+fieldset legend {
+   font-size: 24px;
+   list-style: 30px;
+   margin: 0;
+   margin-left: -10px;
+   margin-bottom: 23px;
+   padding: 0;
+}
+fieldset ul li{
+  list-style: none;
+  margin: 0;
+  margin-bottom: 13px;
+  padding: 0;
+}
+fieldset input[type="checkbox"] {
+  opacity: 0;
+}
+.fieldset-checkbox {
+  position: relative;
+  padding-left: 16px;
+  cursor: pointer;
+}
+.fieldset-checkbox input[type="checkbox"] + .checkbox-indication {
+  position: absolute;
+  top: 0px;
+  left: -10px;;
+
+  width: 17px;
+  height: 17px;
+
+  border: 2px solid #000000;
+}
+.fieldset-checkbox input[type="checkbox"]:checked +
+.checkbox-indication::before,
+.fieldset-checkbox input[type="checkbox"]:checked +
+.checkbox-indication::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 1px;
+
+  width: 15px;
+  height: 2px;
+
+  background-color: #000000;
+}
+.fieldset-checkbox input[type="checkbox"]:checked +
+.checkbox-indication::before {
+  transform: rotate(45deg);
+}
+
+.fieldset-checkbox input[type="checkbox"]:checked +
+.checkbox-indication::after {
+  transform: rotate(-45deg);
+}
+
+fieldset input[type="radio"] {
+  opacity: 0;
+}
+fieldset .sizeline {
+   line-height: 21px;
+}
+.fieldset-radio {
+  position: relative;
+  padding-left: 16px;
+  cursor: pointer;
+}
+.format {
+   margin-left: 32px;
+}
+.fieldset-radio input[type="radio"] + .radio-indication {
+  position: absolute;
+  top: 0px;
+  left: -10px;;
+
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 2px solid #000000;
+}
+.fieldset-radio input[type="radio"]:checked +
+.radio-indication::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  border: 2px solid #000000;
+  background-color: #000000;
+}
+.side-bar button {
+    font-size: 13px;
+    line-height: 18px;
+    padding: 12px 30px;
+    color: #ffffff;
+    background-color: #000000;
 }
