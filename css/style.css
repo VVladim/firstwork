@@ -84,9 +84,9 @@ h1 {
   width: 18px;
   height: 18px;
   top: 28px;
-  left: 28px;
+  left: 18px;
   background: transparent url("../img/sprite.png");
-  background-position: -10px -10px;
+  background-position: -9px -352px;
   opacity: 0.3;
 }
 .login:hover::before {
@@ -306,8 +306,7 @@ h1 {
   font-size: 0;
   vertical-align: top;
   text-decoration: none;
-  transition:
-   background-position 0.5s,
+  transition: background-position 0.5s,
    background-color 0.5s;
   background: #000000 url("../img/sprite.png") no-repeat center;
 }
@@ -316,22 +315,22 @@ h1 {
   background-color: #ffffff;
 }
 .social-btn-vk {
-  background-position: -1px -230px;
+  background-position: -1px -233px;
 }
 .social-btn-fb {
-  background-position: 6px -67px;
+  background-position: 6px 2px;
 }
 .social-btn-inst {
-  background-position: 2px -151px
+  background-position: 1px -82px;
 }
 .social-btn-vk:hover {
   background-position: -2px -267px;
 }
 .social-btn-fb:hover {
-    background-position: 7px -107px;
+    background-position: 4px -41px;
 }
 .social-btn-inst:hover {
-  background-position: 2px -191px;
+  background-position: 2px -122px;
 }
 .footer-copyright p {
   margin: 0;
@@ -347,58 +346,73 @@ h1 {
 }
 
 .sprite {
-    background-image: url("../img/sprite.png");
-    background-repeat: no-repeat;
-    display: block;
-}
-
-.sprite--icon-login {
-    width: 18px;
-    height: 16px;
-    background-position: -10px -10px;
-}
-
-.sprite-cross {
-    width: 12px;
-    height: 12px;
-    background-position: -10px -46px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  display: block;
 }
 
 .sprite-ico-f {
-    width: 12px;
-    height: 22px;
-    background-position: -10px -78px;
+  width: 12px;
+  height: 22px;
+  background-position: -10px -10px;
 }
 
 .sprite-ico-f-copy {
-    width: 12px;
-    height: 22px;
-    background-position: -10px -120px;
+  width: 12px;
+  height: 22px;
+  background-position: -10px -52px;
 }
 
 .sprite-ico-inst {
-    width: 21px;
-    height: 21px;
-    background-position: -10px -162px;
+  width: 21px;
+  height: 21px;
+  background-position: -10px -94px;
 }
 
 .sprite-ico-inst-copy {
-    width: 21px;
-    height: 21px;
-    background-position: -10px -203px;
+  width: 21px;
+  height: 21px;
+  background-position: -10px -135px;
+}
+
+.sprite-ico-password {
+  width: 15px;
+  height: 17px;
+  background-position: -10px -176px;
+}
+
+.sprite-ico-user-copy {
+  width: 15px;
+  height: 15px;
+  background-position: -10px -213px;
 }
 
 .sprite-ico-vk {
-    width: 25px;
-    height: 16px;
-    background-position: -10px -244px;
+  width: 25px;
+  height: 16px;
+  background-position: -10px -248px;
 }
 
 .sprite-ico-vk-copy {
-    width: 25px;
-    height: 16px;
-    background-position: -10px -280px;
+  width: 25px;
+  height: 16px;
+  background-position: -10px -284px;
 }
+
+.sprite-icon-cross {
+  width: 12px;
+  height: 12px;
+  background-position: -10px -320px;
+}
+
+.sprite-icon-login {
+  width: 18px;
+  height: 16px;
+  background-position: -10px -352px;
+}
+
+
+
 /*shop-shop-shop-shop-shop-shop-shop-shop-shop*/
 .main-navigation .logo-inner {
   padding-top: 22px;
@@ -576,4 +590,171 @@ h1 {
 .inner-column-left *:last-child,
 .inner-column-right *:last-child {
   margin-bottom: 0;
+}
+/*modal-content-modal-content-modal-content-modal-content-*/
+.modal-content {
+  position: absolute;
+  /*display: none;*/
+  top: 120px;
+  left: 50%;
+  margin-left: -230px;
+   width: 300px;
+   padding: 50px 80px;
+
+   color: #000000;
+   background: #f8f3f0 url("img/pattern-white.jpg");
+   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+   z-index: 4;
+}
+.modal-content-map {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -280px;
+  margin-left: -383px;
+  width: 766px;
+  height: 561px;
+  border: 7px solid white;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  background: #e9e5dc url("../img/map.png");
+  z-index: 3;
+}
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.modal-content-close {
+    position: absolute;
+    top: 0;
+    right: -34px;
+    width: 22px;
+    height: 22px;
+    font-size: 0;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.modal-content-close::before,
+.modal-content-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+  background-color: #d0d0d0;
+  border-radius: 1px;
+}
+.modal-content-close::before {
+   transform: rotate(45deg);
+}
+.modal-content-close::after {
+   transform: rotate(-45deg);
+}
+.modal-content h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 42px;
+}
+.modal-content p {
+  margin: 0;
+  margin-bottom: 14px;
+}
+.modal-content .login-form {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 241px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  padding-right: 40px;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+  outline: none;
+}
+.login-form input:focus {
+  border-color: #663d15;
+}
+.login-form input.icon-user {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 258px -197px;
+}
+
+.login-form input.icon-password {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 258px -163px;
+}
+.modal-content .restore {
+   float: right;
+   color: #000000;
+}
+.login-form .btn {
+   width: 100%;
+   margin-top: 15px;
+}
+.login-checkbox {
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.login-checkbox:hover {
+  color: #663d15;
+}
+.login-checkbox input[type="checkbox"] {
+  opacity: 0;
+}
+.login-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: -3px;
+  left: 0;
+
+  width: 17px;
+  height: 17px;
+
+  border: 2px solid #000000;
+}
+.login-checkbox input[type="checkbox"]:checked +
+.checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked +
+.checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 1px;
+
+  width: 15px;
+  height: 2px;
+
+  background-color: #000000;
+}
+.login-checkbox input[type="checkbox"]:checked +
+.checkbox-indicator::before {
+  transform: rotate(45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked +
+.checkbox-indicator::after {
+  transform: rotate(-45deg);
 }
