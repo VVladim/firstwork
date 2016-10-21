@@ -978,13 +978,13 @@ fieldset .sizeline {
 }
 .paginator .current:hover,
 .paginator .current:active {
-  background-color: #ffffff;
+  background-color: #fff;
   color: #000000;
 }
 body.shop footer {
     margin-top: 50px;
 }
-/*baxter-baxter-baxter-baxter-baxter-baxter-baxter-baxter-baxter-baxter*/
+
 /*baxter-baxter-baxter-baxter-baxter-baxter-baxter-baxter-baxter-baxter*/
 .slider {
    width: 500px;
