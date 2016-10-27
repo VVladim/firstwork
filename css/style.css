@@ -993,6 +993,7 @@ body.shop footer {
 .slider {
    width: 500px;
    float: left;
+   margin-left: 5px;
 }
 .slider img {
    float: left;
@@ -1008,4 +1009,18 @@ body.shop footer {
 .vendor-code {
    float: right;
    color: #aeaeae;
+}
+.shop-item .main-header {
+   margin-bottom: 59px;
+}
+.shop-item h1 {
+   margin-bottom: 25px;
+}
+.shop-item .breadcrumbs li {
+
+    padding-right: 41px;
+    margin-bottom: 25px;
+}
+.shop-item .breadcrumbs {
+    margin-bottom: 40px;
 }
