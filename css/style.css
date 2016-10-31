@@ -1067,6 +1067,9 @@ body.shop footer {
 #btn-3:checked ~ .slider-controls label[for="btn-3"] {
   background: #000000;
 }
+.slider input[type="radio"] {
+  display: none;
+}
 /*.big-photo {
     overflow: hidden;
     position: relative;
