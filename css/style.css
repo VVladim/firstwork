@@ -1031,7 +1031,43 @@ body.shop footer {
    float: left;
    margin-right: 85px;
 }
-.big-photo {
+.slide {
+  display: none;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 17px;
+  width: 450px;
+  height: 514px;
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.3);
+}
+.slider-controls label {
+  float:left;
+  width: 145px;
+}
+.slide:nth-child(1) {
+   background-image: url(../img/travel-small.jpg);
+}
+.slide:nth-child(3) {
+   background-image: url(../img/set-travel-big.jpg);
+}
+.slide:nth-child(2) {
+   background-image: url(../img/travel-bag-copy.jpg);
+}
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+  display: block;
+}
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+  display: block;
+}
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+  display: block;
+}
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  background: #000000;
+}
+/*.big-photo {
     overflow: hidden;
     position: relative;
     margin-bottom: 17px;
@@ -1072,7 +1108,7 @@ body.shop footer {
      position: absolute;
      top: -18px;
     left: 2px;
-  }
+  }*/
   .shop-item .main-footer {
      margin-top: 23px;
   }
