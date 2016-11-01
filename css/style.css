@@ -674,7 +674,7 @@ h1 {
   left: 2px;
   width: 19px;
   height: 3px;
-  background-color: #d0d0d0;
+  background-color: rgb(90, 88, 97);
   border-radius: 1px;
 }
 .modal-content-close::before {
@@ -1020,7 +1020,6 @@ body.shop footer {
    margin-bottom: 25px;
 }
 .shop-item .breadcrumbs li {
-
     padding-right: 41px;
 }
 .shop-item .breadcrumbs {
@@ -1038,11 +1037,22 @@ body.shop footer {
   margin-bottom: 17px;
   width: 450px;
   height: 514px;
-  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.3);
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.6);
 }
 .slider-controls label {
   float:left;
+  overflow: hidden;
   width: 145px;
+  height: 165px;
+  margin-right: 9px;
+  cursor: pointer;
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.3);
+}
+label img {
+   margin-left: -10px;
+}
+.slide {
+   background-position: -24px 0;
 }
 .slide:nth-child(1) {
    background-image: url(../img/travel-small.jpg);
@@ -1065,7 +1075,7 @@ body.shop footer {
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
 #btn-3:checked ~ .slider-controls label[for="btn-3"] {
-  background: #000000;
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.6);
 }
 .slider input[type="radio"] {
   display: none;
